@@ -1,0 +1,17 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+.vs
+.vscode
+.idea
+.env
+bin
+obj
+packages
+*.suo
+*.user
+server.log
+__pycache__
+venv
+docker-compose-test.yaml

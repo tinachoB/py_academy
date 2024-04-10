@@ -84,29 +84,6 @@ INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 ```
 
-### Run the service as a Docker container
-
-The tool can also run within a Docker container. Regularly, Docker images are pushed to:
-
-<https://hub.docker.com/r/agucarranza/code-generator>
-
-and can be deployed using the `docker-compose.yml` file from the repository.
-In order to do that:
-
-- Replace the `API_KEY` placeholder in `docker-compose.yml` file with an actual value.
-- Run `docker-compose up` at the `code_generator` directory:
-
-```bash
-[Generation%20Code%20Tool]$ cd code_generator
-[Generation%20Code%20Tool/code_generator]$ docker-compose up
-Starting code_generator_code-generator_1 ... done
-Attaching to code_generator_code-generator_1
-code-generator_1  | INFO:     Started server process [1]
-code-generator_1  | INFO:     Waiting for application startup.
-code-generator_1  | INFO:     Application startup complete.
-code-generator_1  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-```
-
 # Available APIS
 
 | **Method** | **URL Pattern**              | **Description**                                           |
@@ -239,24 +216,3 @@ To run the tool, just unzip this file and execute the `code_generator_tool` bina
 All the dependencies needed will be included in the zip file.
 
 The env variables (or the `.env` file) must be configured.
-
-## Build a dev docker image
-
-- If building a new Docker image is required, run the following and replace the tag accordingly:
-
-```bash
-[Generation%20Code%20Tool]$ cd code_generator
-[Generation%20Code%20Tool/code_generator]$ docker build . -t john-doe/code-generator:1.0.1-dev
-```
-
-- Replace the reference of the image in `docker-compose.yml` file:
-
-```yaml
-[...]
-services:
-  code-generator:
-    image: john-doe/code-generator:1.0.1-dev
-[...]
-```
-
-- Run `docker-compose down` and `docker-compose up` again in order to recreate the container.
