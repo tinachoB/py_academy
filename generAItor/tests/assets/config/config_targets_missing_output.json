@@ -1,0 +1,23 @@
+{
+  "paths": {
+    "sources": "home/code-generation/frontend",
+    "prompts": "home/code-generation/prompts",
+    "schemas": "home/code-generation/schemas",
+    "output": "home/code-generation/output"
+  },
+  "targets": [
+    {
+      "comment": "Customer SCSS generation",
+      "generate": true,
+      "prompt": {
+        "file": "{prompts}/angular.components.prompt",
+        "tags": [
+          { "tag": "template_class", "file": "{sources}/components/employee.scss"},
+          { "tag":"template_schema", "file": "{schemas}/employee.json"},
+          { "tag":"target_schema",   "file": "{schemas}/customers.json"},
+          { "tag":"type", "value": "scss"}
+        ]
+      }
+    }
+  ]
+}

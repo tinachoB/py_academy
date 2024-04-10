@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Person",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "long"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "yearsOld": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    }
+  },
+  "NotBlank": ["id", "firstName", "lastName", "yearsOld", "email"],
+  "GeneratedValue": ["id"]
+}

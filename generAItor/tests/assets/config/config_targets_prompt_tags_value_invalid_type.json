@@ -1,0 +1,23 @@
+{
+  "comment": "This config file doesn't match the schema",
+  "paths": {
+    "sources": "home/code-generation/frontend",
+    "prompts": "home/code-generation/prompts",
+    "schemas": "home/code-generation/schemas",
+    "output": "home/code-generation/output"
+  },
+  "targets": [
+    {
+      "comment": "Customer SCSS generation",
+      "output": "{output}/customer.scss",
+      "generate": true,
+      "prompt": {
+        "file": "{prompts}/angular.components.prompt",
+        "tags": [
+          { "tag":"template_class", "file": "{sources}/components/employee.scss"},
+          { "tag":"type", "value": {"error": "Must be a string"}}
+        ]
+      }
+    }
+  ]
+}

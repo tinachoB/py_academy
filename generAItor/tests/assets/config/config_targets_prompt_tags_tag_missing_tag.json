@@ -1,0 +1,25 @@
+{
+  "comment": "This config file doesn't match the schema",
+  "paths": {
+    "sources": "home/code-generation/frontend",
+    "prompts": "home/code-generation/prompts",
+    "schemas": "home/code-generation/schemas",
+    "output": "home/code-generation/output"
+  },
+  "targets": [
+    {
+      "comment": "Customer SCSS generation",
+      "output": "{output}/customer.scss",
+      "generate": true,
+      "prompt": {
+        "file": "{prompts}/angular.components.prompt",
+        "tags": [
+          { "file": "{sources}/components/employee.scss"},
+          { "tag":"template_schema", "file": "{schemas}/employee.json"},
+          { "tag":"target_schema",   "file": "{schemas}/customers.json"},
+          { "tag":"type", "value": "scss"}
+        ]
+      }
+    }
+  ]
+}

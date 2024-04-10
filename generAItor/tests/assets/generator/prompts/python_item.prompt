@@ -1,0 +1,17 @@
+Based on the next python class
+
+{{source_code}}
+
+Generated with the next schema:
+
+{{source_schema}}
+
+I need to generate another python class but now based on the next schema
+
+{{target_schema}}
+
+Generate the file honoring the following rules:
+- Your response should only contain the code fragment ready to be used, avoid adding any descriptive text that could cause parsing errors.
+- Please add no additional comments to the code, just the code.
+- Add the corresponding imports for each file.
+- Pay attention to any private class method like `__equal__` or `__str__`.

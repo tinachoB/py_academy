@@ -1,0 +1,10 @@
+{
+  "comment": "This config file doesn't match the schema",
+  "paths": {
+    "sources": "home/code-generation/frontend",
+    "prompts": "home/code-generation/prompts",
+    "schemas": "home/code-generation/schemas",
+    "output": "home/code-generation/output"
+  },
+  "targets": "Error - This must be an array"
+}

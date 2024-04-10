@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "className": "Person",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "default": -1
+    },
+    "first_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40
+    },
+    "second_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40
+    },
+    "email": {
+      "type": ["string", "null"],
+      "default": null
+    }
+  },
+  "required": ["id", "first_name", "second_name"]
+}

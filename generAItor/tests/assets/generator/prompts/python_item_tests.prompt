@@ -1,0 +1,16 @@
+Based on the next python class:
+
+{{source_class}}
+
+The next python tests were written:
+
+{{source_tests}}
+
+I need to generate a new python test file for the next python class:
+
+{{target_class}}
+
+Generate the file honoring the following rules:
+- Your response should only contain the code fragment ready to be used, avoid adding any descriptive text that could cause parsing errors.
+- Please add no additional comments to the code, just the code.
+- Add the corresponding imports for each file.

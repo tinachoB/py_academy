@@ -1,0 +1,15 @@
+__pycache__/
+.mypy_cache/
+.vs/
+.idea/
+venv/
+generated_output/
+tests/assets/generator/output
+build/
+dist/
+code_generator.egg-info
+code_generator_tool.*
+*.log
+.env
+log.txt
+tmp/

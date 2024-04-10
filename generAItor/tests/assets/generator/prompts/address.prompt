@@ -1,0 +1,11 @@
+Based on the next {{type}} file
+
+{{source_code}}
+
+Generated with the next schema:
+
+{{source_schema}}
+
+I need to generate another {{type}} file but now based on the next schema
+
+{{target_schema}}
