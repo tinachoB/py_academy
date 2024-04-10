@@ -1,0 +1,6 @@
+{
+  "time": "20:40",
+  "verb": "start",
+  "program_name": "cron",
+  "pidfile_name": "test.pid"
+}
